@@ -2,9 +2,12 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get 'welcome/index'
 
+  resources :articles
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-  
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
