@@ -32,9 +32,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-group :development, :test do
+group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'awesome_print', require: 'ap'
+  gem 'pry'
 end
 
 group :development, :test do
